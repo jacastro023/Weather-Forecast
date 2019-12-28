@@ -26,16 +26,18 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="bg-light col-lg-4">
+            <!-- making a class so that these contents stay on the left -->
+            <div class="bg-light col-lg-4">Search for a city:
                 <div class="form-inline form-group">
                     <input class="form-control" type="text" id="input" />
                     <button class="btn btn-primary" id="search">
                         Search
                     </button>
                 </div>
+                <!-- this is the list where the searched cities will go -->
                 <ul class="list-group" id="history"></ul>
             </div>
-
+            <!-- making a class with 7 colums to stay on the right -->
             <div class="col-lg-7">
                 <!-- current city weather stats -->
                 <div class="mt-2" id="current"></div>
