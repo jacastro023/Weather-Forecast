@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // current weather for the day
     function getcurrent(user) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + user + "&units=imperial&appid=166a433c57516f51dfab1f7edaed8413";
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + user + "&units=imperial&appid=166a433c57516f51dfab1f7edaed8413";
 
         $.ajax({
             url: queryURL,
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
             // making second ajax call to get the uv index
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=166a433c57516f51dfab1f7edaed8413",
+                url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=166a433c57516f51dfab1f7edaed8413",
                 method: "GET"
             }).then(function (response) {
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
             var container = $("<div>").addClass("card-body");
             var img = $("<img>").attr(
                 "src",
-                "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
+                "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
             );
             // append html
             city.append(img);
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     // weather data for the next 5 days
     function getWeather(user) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + user + "&units=imperial&cnt=6&appid=166a433c57516f51dfab1f7edaed8413";
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?q=" + user + "&units=imperial&cnt=6&appid=166a433c57516f51dfab1f7edaed8413";
 
         // ajax call for multiple days
         $.ajax({
@@ -94,7 +94,7 @@ $(document).ready(function () {
                     .text(new Date((response.list[i].dt) * 1000).toLocaleDateString());
                 var img = $("<img>").attr(
                     "src",
-                    "http://openweathermap.org/img/w/" +
+                    "https://openweathermap.org/img/w/" +
                     response.list[i].weather[0].icon +
                     ".png"
                 );
