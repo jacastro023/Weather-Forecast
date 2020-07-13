@@ -20,6 +20,11 @@
 
 * One call was made to retrive the 5 day forecast, another for the weather for the current day, and the third one was nested inside the current day ajax call to retrieve the uv index.
 
+## ScreenShots
+* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
 ## Reocurring-erros
 * Making the api urls, sometimes i would not type them out right and the data would not be retrieved.
 
