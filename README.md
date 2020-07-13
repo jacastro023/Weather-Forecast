@@ -21,9 +21,14 @@
 * One call was made to retrive the 5 day forecast, another for the weather for the current day, and the third one was nested inside the current day ajax call to retrieve the uv index.
 
 ## ScreenShots
-* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-* ![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+* This is how the landing page looks upon arriving:
+  ![Alt text](img/start.png "Landing Page")
+
+* Once you do search for a city, it will give you a 5 day forecast for it:
+  ![Alt text](img/one.png "After Searching")
+
+* Finally if you do multiple searches and want to see a previous one, the past searches appear on the left side:
+  ![Alt text](img/search.png "Past Searches")
 
 ## Reocurring-erros
 * Making the api urls, sometimes i would not type them out right and the data would not be retrieved.
